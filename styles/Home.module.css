@@ -1,0 +1,25 @@
+.productList{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productWrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.buts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.items{
+    flex: 1;
+    position: relative;
+    display: flex;
+  }

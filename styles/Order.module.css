@@ -1,0 +1,94 @@
+.container{
+    padding: 50px;
+    display: flex;
+}
+
+.left{
+    flex:2;
+}
+.right{
+    flex: 1;
+}
+
+.row:nth-child(1){
+    width: 84%;
+}
+.wrapper {
+    width: 90%;
+    max-height: 300px;
+    background-color: #333;
+    padding: 50px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .totalTextTitle {
+    margin-right: 10px;
+  }
+  
+  .button {
+    height: 30px;
+    color: rgb(153, 153, 153);
+    font-weight: bold;
+    background-color: white;
+    cursor: not-allowed;
+    margin-top: 20px;
+  }
+  .total {
+
+    font-size: 18px;
+  }
+    
+  .totalTextTitle {
+    margin-right: 10px;
+    
+  }
+  
+  .table{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+.row:last-child{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.done{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.inProgress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: inProgress 1s ease infinite alternate;
+}
+
+@keyframes inProgress{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.undone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.undone .checkedIcon,.inProgress .checkedIcon{
+    display: none;
+}

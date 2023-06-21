@@ -1,0 +1,79 @@
+.container {
+    height: calc(100vh - 100px);
+    background-color: #cccccc;
+    display: flex;
+  }
+  
+  .item {
+    flex: 1;
+    position: relative;
+    display: flex;
+  }
+  .container1 {
+    height: calc(100vh - 100px);
+    display: flex;
+  }
+  
+  .item1 {
+    flex: 1;
+    position: relative;
+    display: flex;
+  }
+  .aboutpara{
+    flex: 1;
+    position: relative;
+    display: flex;
+    margin-top: 80px;
+  }
+  .item:last-child {
+    flex: 2;
+    padding: 50px;
+    justify-content: space-between;
+  }
+
+  .head{
+    color: black;
+  }
+  
+  .card {
+    font:inherit;
+    color: #ffffff;
+    flex: 1;
+    padding: 0 20px;
+    padding-right: 70px;
+  }
+  
+  .title {
+    font-size: 18px;
+    color: #ffc400;
+  }
+  
+  .text {
+    color: rgb(0, 0, 0);
+  }
+  
+  .motto {
+    color: rgb(0, 0, 0);
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      height: auto;
+      text-align: center;
+    }
+    .item:first-child {
+      display: none;
+    }
+  
+    .item {
+      flex-direction: column;
+    }
+  
+    .title {
+      font-size: 30px;
+    }
+  
+    .text {
+      font-size: 20px;
+    }
+  }
